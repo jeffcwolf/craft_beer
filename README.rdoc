@@ -1,5 +1,20 @@
 == README
 
+[FEBRUARY 5, 2015]
+
+Using BreweryDB API
+
+What our basic functionality will be:
+
+(1) Take an address and and a radius
+(2) Then print a Google map with the resulting breweries in that radius
+(3) Add your own parameter that the user can choose to narrow down choice (e.g. organic breweries)
+
+Then we can meet and compare our code next Thursday
+
+-JW
+
+==
 This README would normally document whatever steps are necessary to get the
 application up and running.
 
