@@ -3,12 +3,15 @@
 
 <h1>API Results Here</h1>
 
-<p>Your list of beers that have a(n) "<%= @parameter %>" of value <%= @value %>:</p>
+<p>Your list of beers that have the parameter "<%= @parameter %>" of value "<%= @value %>":</p>
 
-<li><%= @name %></li>
-<li><%= @description %></li>
-<li><%= @parameter_results %></li>
+<h3>Breweries</h3>
 
-<p><%= @parsed_results %></p>
+<% @parsed_results["data"].each do |result| %>
+    <li>Name: <%= result["name"] %></li>
+    <li>Description: <%= result["description"] %></li>
+    <li><%= @parameter %>: <%= result[@parameter] %></li>
+    <br>
+  <% end %>
 
 </div>
