@@ -8,9 +8,9 @@ class BrewerydbsController < ApplicationController
 
   def api
 
-    @endpoint = "breweries"
-    @parameter = "established"
-    @value = "2012"
+    @endpoint = "locations"
+    @parameter = "postalCode"
+    @value = "60647"
 
     @brewerydb_api_url = "http://api.brewerydb.com/v2/#{@endpoint}?key=f9848bef7e3c482cdd315510fc1ba1db&format=json&#{@parameter}=#{@value}"
 
@@ -21,17 +21,6 @@ class BrewerydbsController < ApplicationController
     # @name = @parsed_results["data"][0]["name"]
     # @description = @parsed_results["data"][0]["description"]
     # @parameter_results = @parsed_results["data"][0]["#{@parameter}"]
-
-
-    # Loop Through items in Parsed_Results
-    @parsed_results["data"].each do |result|
-      puts result.inspect
-      # @name = result[0]["name"]
-      # @description = result[0]["description"]
-      # @parameter_results = result[0]["#{@parameter}"]
-    end
-
-
   end
 
   def location
