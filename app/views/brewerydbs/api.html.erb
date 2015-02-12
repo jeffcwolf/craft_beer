@@ -1,19 +1,18 @@
 <div class="container">
 
-
 <h1>API Results</h1>
 
 <p>Your list of "<%= @endpoint %>" that have the parameter "<%= @parameter %>" of value "<%= @value %>":</p>
 
-<h3>Breweries</h3>
+<h3><%= @parsed_results["totalResults"] %> Breweries Found</h3>
 
 <% @parsed_results["data"].each do |result| %>
-    <li>Name: <%= result["name"] %></li>
+    <li>Name: <%= result["brewery"]["name"] %></li>
     <li>Longitude: <%= result["latitude"] %></li>
     <li>Latitude: <%= result["longitude"] %></li>
     <li>Description: <%= result["brewery"]["description"] %></li>
 
-    <li><%= @parameter %>: <%= result[@parameter] %></li>
+    <li><%= @parameter.capitalize %>: <%= result[@parameter] %></li>
     <br>
   <% end %>
 

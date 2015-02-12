@@ -1,5 +1,19 @@
 == README
 
+[FEBRUARY 12, 2015]
+
+TASKS
+
+(1) We now have the basic functionality of the API working. Now we want to get location data
+
+(2) Set up an API query that returns a list of all breweries within a certain locality (city) or zip code, including those breweries' latitude and longitude values
+
+(3) Explore the Google Maps API to determine how we can plot that list of lat/longs on it, along with brewery names on pins at that location
+
+(4) Use Google Maps, if possible, to list a subset of these breweries by a criterion of your choice
+
+
+
 [FEBRUARY 5, 2015]
 
 Using BreweryDB API
@@ -15,30 +29,3 @@ Then we can meet and compare our code next Thursday
 
 -JW
 
-==
-This README would normally document whatever steps are necessary to get the
-application up and running.
-
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-
-
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.

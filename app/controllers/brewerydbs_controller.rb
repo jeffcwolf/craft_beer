@@ -9,8 +9,9 @@ class BrewerydbsController < ApplicationController
   def api
 
     @endpoint = "locations"
-    @parameter = "postalCode"
-    @value = "60647"
+    @parameter = "locality"
+    # @par2 = ""
+    @value = "Chicago"
 
     @brewerydb_api_url = "http://api.brewerydb.com/v2/#{@endpoint}?key=f9848bef7e3c482cdd315510fc1ba1db&format=json&#{@parameter}=#{@value}"
 
