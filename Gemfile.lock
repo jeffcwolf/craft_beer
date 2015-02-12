@@ -1,3 +1,10 @@
+GIT
+  remote: git://github.com/rbetina/starter_generators.git
+  revision: 2e301002dab9412bb96ed1a6c6d7f305a0f40f31
+  branch: panels
+  specs:
+    starter_generators (0.9.6)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -158,6 +165,7 @@ DEPENDENCIES
   sdoc (~> 0.4.0)
   spring
   sqlite3
+  starter_generators!
   turbolinks
   uglifier (>= 1.3.0)
   web-console (~> 2.0)

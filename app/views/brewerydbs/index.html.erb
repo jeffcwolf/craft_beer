@@ -1,1 +1,43 @@
 <h1>Craft Beer Discovery Tool</h1>
+
+<h3>Enter your address in the box below to search for beer:</h3>
+
+<%= form_tag movies_url, :method => "post" do %>
+  <div>
+    <label for="title">Title</label>
+    <input name="title" type="text" id="title" placeholder="Title">
+  </div>
+
+  <div>
+    <label for="year">Year</label>
+    <input name="year" type="text" id="year" placeholder="Year">
+  </div>
+
+  <div>
+    <label for="duration">Duration</label>
+    <input name="duration" type="text" id="duration" placeholder="Duration">
+  </div>
+
+  <div>
+    <label for="description">Description</label>
+    <textarea name="description" id="description"></textarea>
+  </div>
+
+  <div>
+    <label for="image_url">Image URL</label>
+    <input name="image_url" type="text" id="image_url" placeholder="Image URL">
+  </div>
+
+  <div>
+    <label for="director_id">Director</label>
+    <input name="director_id" type="text" id="director_id" placeholder="director id">
+  </div>
+
+  <div>
+    <input type="submit" value="Create Movie">
+    or <a href="index.html">Cancel</a>
+  </div>
+
+<% end %>
+
+

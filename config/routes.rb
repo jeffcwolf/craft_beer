@@ -1,6 +1,10 @@
 Rails.application.routes.draw do
 
-  get("/",        :controller => "brewerydbs", :action => "index" )
+  get("/",                 :controller => "brewerydbs", :action => "index" )
+
+  #READ
+
+  get("/brewerydbs",       :controller => "brewerydbs", :action => "api" )
 
 
   # The priority is based upon order of creation: first created -> highest priority.
