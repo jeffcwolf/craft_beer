@@ -22,12 +22,12 @@ class BrewerydbsController < ApplicationController
     @description = @parsed_results["data"][0]["description"]
     @parameter_results = @parsed_results["data"][0]["#{@parameter}"]
 
-    @parsed_results.each do |result|
-      @name = result["data"][0]["name"]
-      @description = result["data"][0]["description"]
-      @parameter_results = result["data"][0]["#{@parameter}"]
-      @value = result["data"][0]["#{@value}"]
-    end
+    # @parsed_results.each do |result|
+    #   @name = result["data"][0]["name"]
+    #   @description = result["data"][0]["description"]
+    #   @parameter_results = result["data"][0]["#{@parameter}"]
+    #   @value = result["data"][0]["#{@value}"]
+    # end
 
   end
 
